@@ -1,0 +1,198 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Streaming</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 10px 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #ffffff;
+            text-decoration: none;
+            padding: 10px;
+            background-color: #444;
+            border-radius: 5px;
+        }
+
+        nav ul li a:hover {
+            background-color: #ff6347;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        h2 {
+            color: #ff6347;
+        }
+
+        .video-category {
+            margin: 20px 0;
+        }
+
+        .video-container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin: 20px 0;
+        }
+
+        iframe {
+            width: 48%;
+            height: 315px;
+            border: 2px solid #cccccc;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        iframe:hover {
+            transform: scale(1.05);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Video Streaming Site</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#movies">Movies</a></li>
+                <li><a href="#music">Music</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#sports">Sports</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h2>Welcome to My Video Streaming Site</h2>
+            <p>Watch your favorite videos across various categories.</p>
+        </section>
+
+        <section id="movies" class="video-category">
+            <h2>Movies</h2>
+            <div class="video-container">
+                <iframe 
+                    src="https://www.youtube.com/embed/3JZ_D3ELwOQ" 
+                    title="Movie Trailer 1" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+                <iframe 
+                    src="https://www.youtube.com/embed/tgbNymZ7vqY" 
+                    title="Movie Trailer 2" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </section>
+
+        <section id="music" class="video-category">
+            <h2>Music</h2>
+            <div class="video-container">
+                <iframe 
+                    src="https://www.youtube.com/embed/LsoLEjrDogU" 
+                    title="Music Video 1" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+                <iframe 
+                    src="https://www.youtube.com/embed/kJQP7kiw5Fk" 
+                    title="Music Video 2" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </section>
+
+        <section id="education" class="video-category">
+            <h2>Education</h2>
+            <div class="video-container">
+                <iframe 
+                    src="https://www.youtube.com/embed/sBws8MSXN7A" 
+                    title="Educational Video 1" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+                <iframe 
+                    src="https://www.youtube.com/embed/RMBSKN94E1c" 
+                    title="Educational Video 2" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </section>
+
+        <section id="sports" class="video-category">
+            <h2>Sports</h2>
+            <div class="video-container">
+                <iframe 
+                    src="https://www.youtube.com/embed/dlMXcvl_l0U" 
+                    title="Sports Highlight 1" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+                <iframe 
+                    src="https://www.youtube.com/embed/1z5vVz63oAY" 
+                    title="Sports Highlight 2" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>Email: contact@videostreaming.com</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 My Video Streaming Site</p>
+    </footer>
+</body>
+</html>
